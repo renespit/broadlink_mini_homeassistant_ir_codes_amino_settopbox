@@ -4,11 +4,13 @@ Based on https://github.com/yahat/broadlink_mini_homeassistant_ir_codes_samsung_
 
 To be used with Home Assistant Broadlink switch component https://home-assistant.io/components/switch.broadlink/
 
-Download amino_codes.txt
+## Installation
 
-Open the file: <pre>broadlink_remote_\<mac_address_of_your_device\>_codes</pre>
+### Download amino_codes.txt
 
-In the file you see something like this:
+### Open the file: <pre>broadlink_remote_\<mac_address_of_your_device\>_codes</pre>
+
+### In the file you see something like this:
 <pre>{
   "version": 1,
   "minor_version": 1,
@@ -28,7 +30,7 @@ In the file you see something like this:
 }      
 </pre>
 
-Add a comma behind the first closing-curlybracket:
+### Add a comma behind the first closing-curlybracket:
 <pre>
   "version": 1,
   "minor_version": 1,
@@ -48,7 +50,7 @@ Add a comma behind the first closing-curlybracket:
 }    
 </pre>
 
-Copy-Paste the content of file amino_codes.txt behind the comma:
+### Copy-Paste the content of file amino_codes.txt behind the comma:
 <pre>
   "version": 1,
   "minor_version": 1,
@@ -107,9 +109,9 @@ Copy-Paste the content of file amino_codes.txt behind the comma:
 }    
 </pre>
 
-Reload your Broadlink Integration
+### Reload your Broadlink Integration
 
-And now you can use your new codes:
+### And now you can use your new codes:
 <pre>
 type: custom:rs-button-gauge-card
 sensor: sensor.zero
@@ -138,6 +140,8 @@ tap_action:
     device: amino
     command: input 0  
 </pre>
+
+### Complete list of AminoCodes
 
 | Section | Button | Code |
 |---------|--------|------|
